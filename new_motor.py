@@ -11,10 +11,10 @@ for i in range(4):
 	GPIO.setup(dirPin[i], GPIO.OUT)
 
 def wheel(w1, w2, w3, w4)
-	GPIO.output(stepPin[1], w1)
-	GPIO.output(stepPin[2], w2)
-	GPIO.output(stepPin[3], w3)
-	GPIO.output(stepPin[4], w4)
+	GPIO.output(stepPin[0], w1)
+	GPIO.output(stepPin[1], w2)
+	GPIO.output(stepPin[2], w3)
+	GPIO.output(stepPin[3], w4)
 
 def stop()
 	wheel(0, 0, 0, 0)
